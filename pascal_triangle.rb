@@ -1,4 +1,3 @@
-
 def build_Pascal_triangle(level)
   iterator = 0
   pascal_triangle = []
@@ -24,10 +23,10 @@ def print_pascal_triangle
   level = gets.chomp(level).to_i
   pascal_triangle = build_Pascal_triangle(level)
   iterator = 0
-  puts "pascal #{pascal_triangle}"
+  # puts "pascal #{pascal_triangle}"
   max_width = pascal_triangle[-1].max.to_s.length
   # join().split().length
-  puts max_width + 1
+  # puts max_width + 1
   pascal_triangle.map!{|row| row.map{|i| i.to_s.center(max_width*2)}.join }
   max_length = pascal_triangle[-1].length
 
